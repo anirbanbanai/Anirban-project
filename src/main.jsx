@@ -11,6 +11,8 @@ import AuthProvider from './Components/AuthProvider ';
 import Register from './Components/Register';
 import Main from './Components/Main';
 import PrivetRoute from './Components/PrivetRoute';
+import Edu from './Components/Edu';
+import JObLife from './Components/JObLife';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
       {
         path:'/register',
         element:<Register></Register>
+      },
+      {
+        path:"/edu",
+        element:<PrivetRoute><Edu></Edu></PrivetRoute>
+      },
+      {
+        path:"/job",
+        element:<JObLife></JObLife>
       }
     ]
   },
